@@ -16,7 +16,7 @@ public class App
     @Test
     public void test() {
     	System.out.println("test is executing");
-    	System.setProperty("webdriver.chrome.driver", "\\tools\\chromedrive\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/plugins/chromedriver");
     	ChromeOptions options = new ChromeOptions();
     	options.addArguments("headless");
     	driver = new ChromeDriver();
